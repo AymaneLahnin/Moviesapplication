@@ -1,0 +1,30 @@
+<div class="sp">
+    <div class="saisi container">
+      <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <p>Sign-up</p>
+          <div class="ph col-md-4 d-flex justify-content-center">
+            <img class="col-md-12 mb-5 spImg" src="assets/MN.png" alt="image" />
+          </div>
+          <div class="formulaire col-md-8">
+            <label for="fullName" class="form-label">Full Name:</label>
+            <input type="text" class="form-control mb-3" id="fullName" placeholder="full name" formControlName="fullName" />
+  
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control mb-3" id="email" placeholder="email@gmail.com" formControlName="email" />
+  
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control mb-3" id="pwd" placeholder="P@ssw0rd" formControlName="password" />
+  
+            <label for="confirmPwd" class="form-label">Confirm Password:</label>
+            <input type="password" class="form-control mb-3" id="confirmPwd" placeholder="P@ssw0rd" formControlName="confirmPassword" />
+  
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  

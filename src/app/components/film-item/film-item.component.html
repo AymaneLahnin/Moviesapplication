@@ -1,0 +1,12 @@
+
+<div class="card mt-3 hover-card">
+  <a [routerLink]="['/film', movie.id]">
+    <img [src]="tmdbservice.getPosterFilm(movie.imageURL)" class="card-img-top" alt="{{ movie.title }} Poster">
+  </a>
+  <div class="card-body d-flex justify-content-between">
+    <h6 class="card-title">
+      {{ movie.title }}
+    </h6>
+    <i class="fas fa-heart" (click)="toggleFavorite()" [ngClass]="{'favorite': isFavorite}"></i>
+  </div>
+</div>

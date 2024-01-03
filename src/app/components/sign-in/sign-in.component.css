@@ -1,0 +1,92 @@
+
+.sp{
+    background: linear-gradient(to right, #d1d9e6, #f8f9fa); 
+    height: 100vh;
+}
+
+
+
+.saisi {
+
+    background-color: #FFFBFB;
+    padding-bottom: 10px;
+
+    font-family: Abhaya Libre SemiBold;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 70%;
+
+    border: 6px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(207, 172, 172, 0.2);
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+
+    z-index: 2;
+}
+
+#email,
+#pwd {
+    border: none;
+    border-bottom: 2px solid #000
+}
+
+.saisi p {
+    color: #322952;
+
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.saisi .form-check-label {
+    opacity: .5;
+}
+
+.saisi input.form-check-input {
+    border: 1px solid #000;
+
+}
+
+
+ 
+.saisi a.link.text-decoration-none {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Abhaya Libre SemiBold;
+    font-size: 120%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: .7;
+    
+}
+
+.saisi .spImg {
+    width: 100%;
+    transform: translateY(-10%);
+}
+
+@media (max-width: 1000px) {
+    
+    .sp{
+        background-color: aliceblue;
+    }
+    .saisi {
+        width: 90%;
+        transform: none;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .saisi button.btn.btn-primary {
+        width: 50%;
+    }
+    
+}
